@@ -80,59 +80,59 @@ const AppointmentSection = () => {
   };
 
   return (
-    <section id='appointment' className="py-16 bg-white">
-            <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold text-eyegray-dark mb-4 text-center">
-  Book Your Eye Appointment
-</h2>
-            <p className="text-eyegray-dark mb-6">
+    <section id="appointment" className="py-8 md:py-12 lg:py-16 bg-white">
+      <div className="container mx-auto px-2 sm:px-4">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+          <div className="w-full md:w-1/2">
+            <h2 className="text-2xl sm:text-3xl font-bold text-eyegray-dark mb-3 text-center">
+              Book Your Eye Appointment
+            </h2>
+            <p className="text-eyegray-dark mb-4 text-sm sm:text-base">
               Schedule your comprehensive eye exam or consultation with our experienced optometrists. 
               We're dedicated to providing personalized eye care for all your vision needs.
             </p>
-            <ul className="space-y-2 mb-6">
+            <ul className="space-y-2 mb-4">
               <li className="flex items-start">
-                <div className="rounded-full bg-eyeblue-light p-1 mr-3 mt-0.5">
-                  <svg className="h-4 w-4 text-eyeblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="rounded-full bg-eyeblue-light p-1 mr-2 mt-0.5">
+                  <svg className="h-3 w-3 sm:h-4 sm:w-4 text-eyeblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                 </div>
-                <span>Convenient online scheduling</span>
+                <span className="text-sm sm:text-base">Convenient online scheduling</span>
               </li>
               <li className="flex items-start">
-                <div className="rounded-full bg-eyeblue-light p-1 mr-3 mt-0.5">
-                  <svg className="h-4 w-4 text-eyeblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="rounded-full bg-eyeblue-light p-1 mr-2 mt-0.5">
+                  <svg className="h-3 w-3 sm:h-4 sm:w-4 text-eyeblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                 </div>
-                <span>Flexible appointment times</span>
+                <span className="text-sm sm:text-base">Flexible appointment times</span>
               </li>
               <li className="flex items-start">
-                <div className="rounded-full bg-eyeblue-light p-1 mr-3 mt-0.5">
-                  <svg className="h-4 w-4 text-eyeblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="rounded-full bg-eyeblue-light p-1 mr-2 mt-0.5">
+                  <svg className="h-3 w-3 sm:h-4 sm:w-4 text-eyeblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                 </div>
-                <span>Same-day appointments available for urgent care</span>
+                <span className="text-sm sm:text-base">Same-day appointments available for urgent care</span>
               </li>
             </ul>
           </div>
 
-          <div className="md:w-1/2 bg-white rounded-lg shadow-lg p-6">
+          <div className="w-full md:w-1/2 bg-white rounded-lg shadow-md p-4 sm:p-5">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
                 <FormField
                   control={form.control}
                   name="name"
                   rules={{ required: "Name is required" }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Full Name</FormLabel>
+                      <FormLabel className="text-sm sm:text-base">Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" {...field} />
+                        <Input placeholder="John Doe" {...field} className="text-sm sm:text-base" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-xs sm:text-sm" />
                     </FormItem>
                   )}
                 />
@@ -149,11 +149,11 @@ const AppointmentSection = () => {
                   }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel className="text-sm sm:text-base">Email</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="john@example.com" {...field} />
+                        <Input type="email" placeholder="john@example.com" {...field} className="text-sm sm:text-base" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-xs sm:text-sm" />
                     </FormItem>
                   )}
                 />
@@ -164,11 +164,11 @@ const AppointmentSection = () => {
                   rules={{ required: "Phone number is required" }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Phone Number</FormLabel>
+                      <FormLabel className="text-sm sm:text-base">Phone Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="(123) 456-7890" {...field} />
+                        <Input placeholder="(123) 456-7890" {...field} className="text-sm sm:text-base" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-xs sm:text-sm" />
                     </FormItem>
                   )}
                 />
@@ -179,10 +179,10 @@ const AppointmentSection = () => {
                   rules={{ required: "Please select a service" }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Service</FormLabel>
+                      <FormLabel className="text-sm sm:text-base">Service</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <SelectTrigger>
+                          <SelectTrigger className="text-sm sm:text-base">
                             <SelectValue placeholder="Select a service" />
                           </SelectTrigger>
                         </FormControl>
@@ -194,20 +194,20 @@ const AppointmentSection = () => {
                           <SelectItem value="follow-up">Follow-Up Visit</SelectItem>
                         </SelectContent>
                       </Select>
-                      <FormMessage />
+                      <FormMessage className="text-xs sm:text-sm" />
                     </FormItem>
                   )}
                 />
 
                 <FormItem className="flex flex-col">
-                  <FormLabel>Preferred Date</FormLabel>
+                  <FormLabel className="text-sm sm:text-base">Preferred Date</FormLabel>
                   <Popover>
                     <PopoverTrigger asChild>
                       <FormControl>
                         <Button
-                          variant={"outline"}
+                          variant="outline"
                           className={cn(
-                            "w-full pl-3 text-left font-normal",
+                            "w-full pl-3 text-left font-normal text-sm sm:text-base",
                             !date && "text-muted-foreground"
                           )}
                         >
@@ -226,18 +226,18 @@ const AppointmentSection = () => {
                           const today = new Date();
                           return date < today || date > new Date(today.setMonth(today.getMonth() + 3));
                         }}
-                        className={cn("p-3 pointer-events-auto")}
+                        className={cn("p-2 sm:p-3 pointer-events-auto")}
                       />
                     </PopoverContent>
                   </Popover>
                   {!date && form.formState.isSubmitted && (
-                    <p className="text-sm font-medium text-destructive mt-1">
+                    <p className="text-xs sm:text-sm font-medium text-destructive mt-1">
                       Please select a date
                     </p>
                   )}
                 </FormItem>
 
-                <Button type="submit" className="w-full">Book Appointment</Button>
+                <Button type="submit" className="w-full text-sm sm:text-base">Book Appointment</Button>
               </form>
             </Form>
           </div>

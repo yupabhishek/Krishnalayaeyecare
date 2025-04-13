@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
 import {
@@ -38,11 +37,11 @@ const showcaseItems = [
 
 const ShowcaseSection = () => {
   return (
-    <section id="showcase" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-eyegray-dark mb-4">Our Optical Shop</h2>
-          <p className="text-eyegray-dark max-w-2xl mx-auto">
+    <section id="showcase" className="py-8 md:py-12 lg:py-16 bg-white">
+      <div className="container mx-auto px-2 sm:px-4">
+        <div className="text-center mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-eyegray-dark mb-3">Our Optical Shop</h2>
+          <p className="text-eyegray-dark max-w-xl mx-auto text-sm sm:text-base">
             Explore our wide selection of eyewear products, from designer frames to specialty lenses.
           </p>
         </div>
@@ -54,19 +53,19 @@ const ShowcaseSection = () => {
           }}
           className="w-full"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-2">
             {showcaseItems.map((item) => (
-              <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={item.id} className="pl-2 basis-full sm:basis-1/2 lg:basis-1/3">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-48 sm:h-56 md:h-64 object-cover"
                   />
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-eyegray-dark mb-2">{item.title}</h3>
-                    <p className="text-eyegray mb-4">{item.description}</p>
-                    <Button variant="outline" asChild className="w-full">
+                  <div className="p-4 sm:p-5">
+                    <h3 className="text-base sm:text-lg font-semibold text-eyegray-dark mb-2">{item.title}</h3>
+                    <p className="text-eyegray mb-3 text-sm sm:text-base">{item.description}</p>
+                    <Button variant="outline" asChild className="w-full text-sm sm:text-base">
                       <Link to="/">Visit</Link>
                     </Button>
                   </div>
@@ -74,12 +73,12 @@ const ShowcaseSection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-2" />
-          <CarouselNext className="right-2" />
+          <CarouselPrevious className="left-1 sm:left-2" />
+          <CarouselNext className="right-1 sm:right-2" />
         </Carousel>
 
-        <div className="text-center mt-10">
-          <Button asChild>
+        <div className="text-center mt-6 sm:mt-8">
+          <Button asChild className="text-sm sm:text-base">
             <Link to="/">Visit Our Optical Shop</Link>
           </Button>
         </div>

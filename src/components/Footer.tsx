@@ -11,14 +11,14 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/public/lovable-uploads/bfc6386e-c26a-4c77-86b8-e99a372d289e.png" 
+                src="/logo.png" 
                 alt="Shree Krishnalya Logo" 
                 className="h-10 w-auto bg-white rounded-full p-1"
               />
               <span className="text-xl font-semibold">Shree Krishnalya</span>
             </div>
             <p className="text-eyegray-light mb-4">
-              Providing professional eye care services and quality eyewear products since 2005.
+              Providing professional eye care services and quality eyewear products since 2081.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-eyeblue shrink-0" />
-                <span>info@shreekrishnalya.com</span>
+                <span></span>
               </li>
             </ul>
           </div>
