@@ -29,7 +29,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-eyeblue shrink-0 mt-0.5" />
-                <span>Drivartol Tilottama 01, Rupandehi</span>
+                <span>Drivertol-1 Tilottama Rupandehi Butwal, Nepal</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-eyeblue shrink-0" />

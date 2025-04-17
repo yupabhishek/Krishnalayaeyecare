@@ -9,7 +9,7 @@ const Doctor = () => {
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-black">Our Owner</h2>
         <p className="text-muted-foreground text-sm sm:text-base mt-2">
-          Meet Dr. Azeet Yadav, a trusted expert in ophthalmology.
+          Meet Dr. Azeet Yadav, a trusted expert in Optometrist.
         </p>
       </div>
 
@@ -20,11 +20,11 @@ const Doctor = () => {
         <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
           <h1 className="text-4xl font-bold text-black mb-4">Dr. Azeet Yadav</h1>
           <p className="text-black mb-4">
-            Bsc - Ophthalmology <br />
+           Bsc- optometry <br />
             Dedicated to eye care and vision health, Dr. Yadav brings expertise, compassion, and a commitment to improving patients' quality of life.
           </p>
           <p className="text-black mb-4">
-            Location: Bhairawa, Nepal
+            Location: Drivertol-1 Tilottama Rupandehi Butwal, Nepal
           </p>
 
           {/* Visit Button */}
