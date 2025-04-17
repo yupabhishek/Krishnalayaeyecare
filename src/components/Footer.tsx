@@ -1,5 +1,6 @@
 
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook,} from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,9 +11,9 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img 
-                src="/logo.png" 
-                alt="Shree Krishnalya Logo" 
+              <img
+                src="/logo.png"
+                alt="Shree Krishnalya Logo"
                 className="h-10 w-auto bg-white rounded-full p-1"
               />
               <span className="text-xl font-semibold">Shree Krishnalya</span>
@@ -104,6 +105,32 @@ const Footer = () => {
           <p className="text-eyegray text-sm">
             &copy; {new Date().getFullYear()} Shree Krishnalya Eye Care Center & Opticals. All rights reserved.
           </p>
+          <p className="text-eyegray text-sm">
+            &copy;  Website by{" "}
+            <a
+              href="https://www.avdevelopment.in/"
+              className="text-blue-400 font-semibold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AV Development
+            </a> <a href="https://linktr.ee/yup.abhishek"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-400 font-semibold hover:underline">
+              [ABHIHSEK].</a>
+          </p>
+          <div className="flex justify-center gap-4 mt-4">
+            <a href="https://www.instagram.com/azeet.ydv/" target="_blank" rel="noopener noreferrer">
+              <Instagram className="h-6 w-6 text-white-500 hover:text-blue-400" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100069853323174" target="_blank" rel="noopener noreferrer">
+              <Facebook className="h-6 w-6 text-white-500 hover:text-blue-400" />
+            </a>
+            <a href="https://wa.me/9779826459523" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp  className="h-6 w-6 text-white-500 hover:text-blue-400" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

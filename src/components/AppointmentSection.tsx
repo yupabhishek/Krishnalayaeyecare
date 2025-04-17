@@ -130,7 +130,7 @@ const AppointmentSection = () => {
                     <FormItem>
                       <FormLabel className="text-sm sm:text-base">Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" {...field} className="text-sm sm:text-base" />
+                        <Input placeholder="john doe" {...field} className="text-sm sm:text-base" />
                       </FormControl>
                       <FormMessage className="text-xs sm:text-sm" />
                     </FormItem>
@@ -166,7 +166,7 @@ const AppointmentSection = () => {
                     <FormItem>
                       <FormLabel className="text-sm sm:text-base">Phone Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="(123) 456-7890" {...field} className="text-sm sm:text-base" />
+                        <Input placeholder="+977 123 4567890" {...field} className="text-sm sm:text-base" />
                       </FormControl>
                       <FormMessage className="text-xs sm:text-sm" />
                     </FormItem>
