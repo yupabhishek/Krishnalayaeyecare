@@ -18,7 +18,7 @@ const Doctor = () => {
 
         {/* Text Part */}
         <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
-          <h1 className="text-4xl font-bold text-black mb-4">Dr. Azeet Yadav</h1>
+          <h1 className="text-4xl font-bold text-black mb-4">Optom. Azeet Yadav</h1>
           <p className="text-black mb-4">
            Bsc- optometry <br />
             Dedicated to eye care and vision health, Dr. Yadav brings expertise, compassion, and a commitment to improving patients' quality of life.
