@@ -9,7 +9,7 @@ const Doctor = () => {
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-black">Our Owner</h2>
         <p className="text-muted-foreground text-sm sm:text-base mt-2">
-          Meet Dr. Azeet Yadav, a trusted expert in Optometrist.
+          Meet Optom. Azeet Yadav, a trusted expert in Optometrist.
         </p>
       </div>
 
