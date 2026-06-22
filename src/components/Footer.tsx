@@ -106,20 +106,17 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Shree Krishnalya Eye Care Center & Opticals. All rights reserved.
           </p>
           <p className="text-eyegray text-sm">
-            &copy;  Website by{" "}
-            <a
-              href="https://www.avdevelopment.in/"
-              className="text-blue-400 font-semibold hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              AV Development
-            </a> <a href="https://linktr.ee/yup.abhishek"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-400 font-semibold hover:underline">
-              [ABHIHSEK].</a>
-          </p>
+  Website Designed & Developed by{" "}
+  <a
+    href="https://zenvyratech.in"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold hover:underline"
+  >
+    <span className="text-white">Zenvyra</span>
+    <span style={{ color: "#44ffff" }}>Tech</span>
+  </a>
+</p>
           <div className="flex justify-center gap-4 mt-4">
             <a href="https://www.instagram.com/azeet.ydv/" target="_blank" rel="noopener noreferrer">
               <Instagram className="h-6 w-6 text-white-500 hover:text-blue-400" />
